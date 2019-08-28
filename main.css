@@ -81,7 +81,8 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
     to bottom,
     rgb(134, 134, 134) 5%,
     rgb(128, 128, 128) 50%,
