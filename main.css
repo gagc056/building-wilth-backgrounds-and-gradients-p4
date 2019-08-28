@@ -181,15 +181,14 @@ a:hover {
 }
 
 .last-description {
-  width: 640px;
-  height: 64px;
+  width: 500px;
 }
 
 .f-container {
   min-height: 175px;
   display: flex;
-  max-width: 1440px;
-  min-width: 1024px;
+  max-width: 1360px;
+  min-width: 1100px;
   margin: 0 auto;
 }
 
