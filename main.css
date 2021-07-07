@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    Lucida Grande,
+    Lucida Sans Unicode,
+    Lucida Sans,
+    Lucida Sans Regular,
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(59, 138, 202);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1360px;
+  min-width: 1100;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  height: 640px;
+  background: url("./img/HERO.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.header-nav {
+  width: 980px;
+  height: 35px;
+  position: absolute;
+  font-size: 14px;
+  top: 85px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgb(134, 134, 134) 5%,
+      rgb(128, 128, 128) 50%,
+      rgb(107, 107, 107) 51%,
+      rgb(99, 99, 99) 8%,
+      rgb(121, 121, 121) 94%
+    );
+  border: 1px solid rgb(109, 109, 109);
+}
+
+.header-nav__menu {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav input {
+  border-radius: 9px;
+  border: none;
+}
+
+.h-nav-item {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-right: 1px solid rgba(75, 75, 75, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.753),
+    1px 1px 1px rgba(66, 66, 66, 0.651);
+  cursor: pointer;
+}
+
+.h-nav-item span {
+  position: relative;
+  top: 6px;
+}
+
+.h-nav-item:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.h-nav-item:last-of-type {
+  border-right: none;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.h-nav-item input {
+  width: 100px;
+  height: 22px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  box-shadow:
+    inset 1px 1px 1px rgba(70, 70, 70, 0.8),
+    inset 0 -1px 1px rgba(204, 204, 204, 0.6);
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.h-nav-item input:focus {
+  background: white;
+  width: 200px;
+  outline: none;
+  border: 1px solid rgba(75, 75, 75, 0.8);
+}
+
+.h-nav-item .apple {
+  position: relative;
+  top: 5px;
+}
+
+.svg-search {
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+
+.header-text-container {
+  position: relative;
+  font-weight: lighter;
+  top: -30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-second {
+  width: 60%;
+  padding: 25px 0;
+}
+
+.header-container {
+  height: 32px;
+  overflow: hidden;
+}
+
+.last-description {
+  width: 500px;
+}
+
+.f-container {
+  min-height: 175px;
+  display: flex;
+  max-width: 1360px;
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+.f-item {
+  object-fit: cover;
+  object-position: 50% 0;
+  position: relative;
+  overflow: hidden;
+  border-right: 3px solid white;
+  background: rgb(238, 238, 238);
+  cursor: pointer;
+}
+
+.f-item:last-of-type {
+  border-right: none;
+}
+
+.footer {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+}
+
+.f-row,
+.f-nav {
+  display: flex;
+}
+
+.f-row {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-nav {
+  align-items: center;
+  font-size: 11px;
+}
+
+.store,
+.copyright {
+  font-size: 10px;
+  color: rgb(90, 90, 90);
+}
+
+.copyright a {
+  padding: 0 5px;
+}
+
+.copyright a:first-of-type {
+  border-right: 1px solid rgb(216, 216, 216);
+}
+
+.f-nav-item {
+  padding: 0 7px;
+  border-right: 1px solid rgb(216, 216, 216);
+}
+
+.f-nav-item:last-of-type {
+  border-right: none;
+}
+
+.flag {
+  position: relative;
+  top: 4px;
+}
